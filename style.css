@@ -121,7 +121,7 @@ button {
     font-weight: 200;
     font-size: 24px;
     color: #ffffff;
-    margin-top: 32px;
+    margin-top: 48px;
     cursor: pointer;
     border: none;
     padding: 24px;
@@ -162,7 +162,79 @@ button {
 }
 
 
-.button_enter:hover {
-    background: #5296a5;
+@media screen and (max-width: 500px) {
+    .voxxbank {
+        font-size: 40px;
+    }
+    .slogan {
+        font-size: 30px;
+    }
+    nav {
+        gap: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    .button_enter {
+        width: 100%;
+    }
+    .text_login {
+        font-size: 30px;
+    }
+    .text_email, .text_senha {
+        font-size: 20px;
+    }
+    .place_email, .place_senha {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .voxxbank {
+        font-size: 30px;
+    }
+    .slogan {
+        font-size: 0%;
+    }
+    nav {
+        gap: 20px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .button_enter {
+        width: 100%;
+    }
+    .text_login {
+        font-size: 20px;
+    }
+    .text_email, .text_senha {
+        font-size: 16px;
+    }
+    .place_email, .place_senha {
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+body.mobile .voxxbank {
+    font-size: 10vw;
+}
+
+body.mobile .slogan {
+    font-size: 0vw;
+}
+
+
+body.tablet .voxxbank {
+    font-size: 8vw;
+}
+
+body.tablet .slogan {
+    font-size: 6vw;
+}
 
 }
