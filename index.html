@@ -10,43 +10,21 @@
 <body>
     <h1 class="voxxbank">VoxxBank.</h1>
     <p class="slogan">Um banco que ouve você</p>
-    
+
     <nav>
-        <a href="/sobre">Sobre</a>
-        <a href="/servicos">Serviços</a>
-        <a href="/contatos">Contatos</a>
+        <a href="/sobre">Sobre.</a>
+        <a href="/servicos">Serviços.</a>
+        <a href="/contatos">Contatos.</a>
     </nav>
     
     <div class="form_login">
         <h2 class="text_login">Login</h2>
         <label class="text_email" for="email">Email:</label>
         <input class="place_email" type="email" id="email" placeholder="Exemplo@exemplo.com" autocomplete="off">
-        
         <label class="text_senha" for="senha">Senha:</label>
         <input class="place_senha" type="password" id="senha" placeholder="Digite sua senha" autocomplete="off">
-        
-        <button type="button" id="togglePassword" class="button_toggle">Mostrar</button>
-
         <button class="button_enter">Entrar</button>
-
         <a href="/registro" class="register-link">Não tem uma conta? Registre-se aqui</a>
     </div>
-
-    <script src="script.js" defer></script>
-    <script>
-        // JavaScript para alternar a visibilidade da senha
-        document.getElementById('togglePassword').addEventListener('click', function() {
-            const senhaInput = document.getElementById('senha');
-            const tipoAtual = senhaInput.type;
-
-            if (tipoAtual === 'password') {
-                senhaInput.type = 'text';
-                this.textContent = 'Esconder'; // Muda o texto para "Esconder"
-            } else {
-                senhaInput.type = 'password';
-                this.textContent = 'Mostrar'; // Muda o texto para "Mostrar"
-            }
-        });
-    </script>
 </body>
 </html>
